@@ -9,7 +9,6 @@ ai_action = random.choice(["rock", "paper", "scissors"])
 
 While()
     print(f"\nYou chose {user_action}, AI chose {ai_action}.\n")
-
     if user_action == ai_action:
         print(f"Both players selected {user_action}. It's a tie!")
     elif user_action == "rock":
@@ -18,7 +17,7 @@ While()
         else:
             print("Paper covers rock! You lose.")
     elif user_action == "paper":
-        if ai_action == "paper":
+        if ai_action == "rock":
             print("Paper covers rock! You win!")
         else:
             print("Scissors cuts paper! You lose.")
